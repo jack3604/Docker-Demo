@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Docker Demo Index Page</title>
+    </head>
+
+    <body>
+        <p><a href="/listCars">Show all cars</a></p>
+
+        <form action="/addCar" method="POST" id="addCarForm">
+            <label>Add a car to the database?</label>
+
+            <div>
+                <label for="carMakeField">make:</label>
+                <input name="carMake" id="carMakeField">
+            </div>
+            <div>
+                <label for="carModelField">model:</label>
+                <input name="carModel" id="carModelField">
+            </div>
+            <div>
+                <label for="carYearField">year:</label>
+                <input name="carYear" id="carYearField">
+            </div>
+
+            <input type="submit" name="add" id="addCar">
+        </form>
+    </body>
+</html>
