@@ -8,7 +8,7 @@ import org.springframework.data.couchbase.repository.config.EnableCouchbaseRepos
 @EnableCouchbaseRepositories
 @Configuration
 public class CouchbaseConfiguration extends AbstractCouchbaseConfiguration {
-    @Value("#{systemEnvironment['DB_CONN_STRING'] ?: 'localhost'}")
+    @Value("#{systemEnvironment['DB_CONN_STRING'] ?: 'couchbase://172.17.0.2'}") //make this the ip of the database container
     private String dbConnString;
     @Value("#{systemEnvironment['DB_USERNAME'] ?: 'webuser'}")
     private String dbUsernameString;
